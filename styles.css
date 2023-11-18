@@ -208,24 +208,27 @@ header {
     width: 60%;
 }
 
-.imageidentite .presentationbouton button{
+.imageidentite .presentationbouton a{
     width: 35%;
     height: 4vh;
     font-size: 16px;
     font-weight: bolder;
     color: rgb(1, 0, 70);
     background-color: rgba(0, 2, 148, 0);
-    border: 2px solid 
+    border: 2px solid rgb(1, 0, 70);
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
 }
 
-.imageidentite .presentationbouton button:hover{
+.imageidentite .presentationbouton a:hover{
     cursor: pointer;
     color: rgb(100, 216, 245);
     background-color: rgb(1, 0, 70);
     transition: 0.3s;
 }
 
-.imageidentite .presentationbouton button:active{
+.imageidentite .presentationbouton a:active{
     background-color: #cdf5ff;
     transition: 0.1s;
 }
@@ -265,7 +268,7 @@ header {
 
 @media only screen and (max-width: 600px) {
     .textidentite{
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
