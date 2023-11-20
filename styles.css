@@ -78,6 +78,44 @@ header {
     transition: transform 0.3s;
 }
 
+.burger-menu {
+    color: rgb(100, 216, 245);
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Caché par défaut */
+    margin: 0 20px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background-color: rgb(1, 0, 70);
+        width: 100%;
+        padding: 1em;
+        height: 90vh;
+        z-index: 1000;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar.show {
+        display: block;
+        left: 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+
 .wrapper{
     z-index: -1;
     position: absolute;

@@ -591,3 +591,8 @@ function showProject(projectId) {
     }
   }
 }
+
+function toggleNav() {
+  var navLinks = document.querySelector('.navbar');
+  navLinks.classList.toggle('show');
+}
