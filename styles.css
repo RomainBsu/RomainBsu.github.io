@@ -80,13 +80,16 @@ header {
 
 .burger-menu {
     color: rgb(100, 216, 245);
-    font-size: 1.5em;
+    font-size: 50px;
     cursor: pointer;
     display: none; /* Caché par défaut */
     margin: 0 20px 0 0;
 }
 
 @media only screen and (max-width: 1030px) {
+    .nom{
+        font-size: 50px;
+    }
     .navbar {
         display: none;
         flex-direction: column;
@@ -111,6 +114,10 @@ header {
 
     .burger-menu {
         display: block;
+    }
+
+    .navbar ul li a{
+        font-size: 40px;
     }
 }
 
@@ -215,22 +222,6 @@ header {
     margin: 4% 0% 4% 4%;
 }
 
-
-@media only screen and (max-width: 1500px) {
-    .presentation{
-        height: auto;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .imageidentite{
-        width: 100%;
-    }
-
-    .imageidentite .presentationbouton{
-        width: 100%;
-    }
-}
-
 .imageidentite:hover{
     cursor: pointer;
 }
@@ -273,6 +264,25 @@ header {
     transition: 0.1s;
 }
 
+@media only screen and (max-width: 1500px) {
+    .presentation{
+        height: auto;
+    }
+
+    .imageidentite{
+        width: 150%;
+    }
+
+    .imageidentite .presentationbouton{
+        width: 100%;
+    }
+
+    .imageidentite .presentationbouton a{
+        font-size: 36px;
+        line-height: 200%;
+    }
+}
+
 .flip-animation{
     animation: flip_image 1s 1 ease-in;
     box-shadow: 0px 0 0 0 rgba(0, 0, 255, 0);
@@ -306,9 +316,10 @@ header {
     border: solid 2px rgba(255, 0, 0, 0);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1500px) {
     .textidentite{
-        font-size: 28px;
+        font-size: 100%;
+        width: 100%;
     }
 }
 
@@ -398,6 +409,19 @@ header {
     width: 60%;
     height: 200px;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .timeline .item1{
+        width: 80%;
+        font-size: 32px;
+    }
+    .timeline .item1 .timelinetext h3{
+        font-size: 36px;
+    }
+    .timeline .item1 .timelineimage{
+        width: 100%;
+    }
 }
 
 .circle1 {
@@ -833,6 +857,24 @@ header {
     color: black;
 }
 
+@media only screen and (max-width: 1500px) {
+    h2, p{
+        font-size: 36px;
+    }
+
+    .skill p{
+        font-size: 28px;
+    }
+
+    .righcolumn ul li{
+        font-size: 28px;
+    }
+
+    .righcolumn p{
+        font-size: 26px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .righcolumn{
         margin-top: 30px;
@@ -1216,4 +1258,10 @@ header {
 
 .rootmeproject{
     display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .timelinetitle, .competencestitle, .experiencestitle, .projetstitle{
+        font-size: 70px;
+    }
 }
