@@ -11,7 +11,7 @@ body {
     background-color: rgb(212, 235, 255);
     overflow-x: hidden;
     overflow-y:auto;
-    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 body .test{
@@ -86,7 +86,7 @@ header {
     margin: 0 20px 0 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1030px) {
     .navbar {
         display: none;
         flex-direction: column;
