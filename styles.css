@@ -91,12 +91,11 @@ header {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 98%;
         left: -100%;
         background-color: rgb(1, 0, 70);
         width: 100%;
-        padding: 1em;
-        height: 90vh;
+        height: 94vh;
         z-index: 1000;
         transition: left 0.3s ease-in-out;
     }
@@ -347,11 +346,13 @@ header {
     align-items: center;
     padding: 5px 26px 5px 26px;
     height: 80vh;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1500px) {
     .timeline{
         height: auto;
+        width: 90%;
     }
 }
 
@@ -387,7 +388,7 @@ header {
 
 .timeline .item1 .timelineimage{
     border-bottom: solid 2px black;
-    width: 130%;
+    width: 120%;
     display: flex;
     justify-content: center;
     padding: 0 0 20px 0;
