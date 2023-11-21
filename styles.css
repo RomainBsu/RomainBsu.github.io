@@ -86,10 +86,7 @@ header {
     margin: 0 20px 0 0;
 }
 
-@media only screen and (max-width: 1030px) {
-    .nom{
-        font-size: 50px;
-    }
+@media only screen and (max-width: 1130px) {
     .navbar {
         display: none;
         flex-direction: column;
@@ -114,10 +111,6 @@ header {
 
     .burger-menu {
         display: block;
-    }
-
-    .navbar ul li a{
-        font-size: 40px;
     }
 }
 
@@ -241,7 +234,6 @@ header {
 
 .imageidentite .presentationbouton a{
     width: 35%;
-    height: 4vh;
     font-size: 16px;
     font-weight: bolder;
     color: rgb(1, 0, 70);
@@ -276,11 +268,6 @@ header {
     .imageidentite .presentationbouton{
         width: 100%;
     }
-
-    .imageidentite .presentationbouton a{
-        font-size: 36px;
-        line-height: 200%;
-    }
 }
 
 .flip-animation{
@@ -314,13 +301,6 @@ header {
     padding: 18px;
     border-radius: 10px;
     border: solid 2px rgba(255, 0, 0, 0);
-}
-
-@media only screen and (max-width: 1500px) {
-    .textidentite{
-        font-size: 100%;
-        width: 100%;
-    }
 }
 
 .textidentite:hover{
@@ -412,13 +392,6 @@ header {
 }
 
 @media only screen and (max-width: 1500px) {
-    .timeline .item1{
-        width: 80%;
-        font-size: 32px;
-    }
-    .timeline .item1 .timelinetext h3{
-        font-size: 36px;
-    }
     .timeline .item1 .timelineimage{
         width: 100%;
     }
@@ -523,12 +496,6 @@ header {
     margin: 10px 50px 10px 80px;
     position: relative;
     height: 60px;
-}
-
-@media only screen and (max-width: 1500px) {
-    .skill{
-        margin: 10px 10px 10px 10px;
-    }
 }
 
 .skill p{
@@ -858,20 +825,8 @@ header {
 }
 
 @media only screen and (max-width: 1500px) {
-    h2, p{
-        font-size: 36px;
-    }
-
-    .skill p{
-        font-size: 28px;
-    }
-
-    .righcolumn ul li{
-        font-size: 28px;
-    }
-
-    .righcolumn p{
-        font-size: 26px;
+    .skill{
+        margin: 10px 10px 10px 10px;
     }
 }
 
@@ -1097,6 +1052,7 @@ header {
         width: 400px;
         height: 80%;    
     }
+    
 }
 
 @media only screen and (max-width: 1410px) {
@@ -1259,8 +1215,100 @@ header {
 .rootmeproject{
     display: none;
 }
-
 @media only screen and (max-width: 1500px) {
+    .nom{
+        font-size: 40px;
+    }
+    .navbar ul li a{
+        font-size: 22px;
+    }
+    .imageidentite .presentationbouton a{
+        font-size: 26px;
+        line-height: 150%;
+        width: 26%;
+    }
+    .textidentite{
+        font-size: 100%;
+        width: 100%;
+    }
+    .timeline .item1{
+        width: 80%;
+        font-size: 26px;
+    }
+    .timeline .item1 .timelinetext h3{
+        font-size: 26px;
+    }
+    h2, p{
+        font-size: 26px;
+    }
+
+    .skill p{
+        font-size: 22px;
+        margin-top: 4px;
+    }
+
+    .righcolumn ul li{
+        font-size: 22px;
+    }
+
+    .righcolumn p{
+        font-size: 20px;
+    }
+    .firmenichinfo p:nth-child(n+2), .nokiainfo p:nth-child(n+2), .fnacinfo p:nth-child(n+2) {
+        font-size: 22px;
+    }
+    .firmenichinfo p:first-child, .nokiainfo p:first-child, .fnacinfo p:first-child{
+        font-size: 26px;
+    }
+    .timelinetitle, .competencestitle, .experiencestitle, .projetstitle{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nom{
+        font-size: 50px;
+    }
+    .navbar ul li a{
+        font-size: 40px;
+    }
+    .imageidentite .presentationbouton a{
+        font-size: 36px;
+        line-height: 200%;
+    }
+    .textidentite{
+        font-size: 100%;
+        width: 100%;
+    }
+    .timeline .item1{
+        width: 80%;
+        font-size: 32px;
+    }
+    .timeline .item1 .timelinetext h3{
+        font-size: 36px;
+    }
+    h2, p{
+        font-size: 36px;
+    }
+
+    .skill p{
+        font-size: 28px;
+        margin-top: 4px;
+    }
+
+    .righcolumn ul li{
+        font-size: 28px;
+    }
+
+    .righcolumn p{
+        font-size: 26px;
+    }
+    .firmenichinfo p:nth-child(n+2), .nokiainfo p:nth-child(n+2), .fnacinfo p:nth-child(n+2) {
+        font-size: 28px;
+    }
+    .firmenichinfo p:first-child, .nokiainfo p:first-child, .fnacinfo p:first-child{
+        font-size: 34px;
+    }
     .timelinetitle, .competencestitle, .experiencestitle, .projetstitle{
         font-size: 70px;
     }
