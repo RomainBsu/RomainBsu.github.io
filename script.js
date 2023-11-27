@@ -572,9 +572,17 @@ const updateAnimation = function() {
 
 window.addEventListener('load', updateAnimation);
 window.addEventListener('resize', updateAnimation);
+let previousTitle = document.getElementsByClassName("saithtitle")[0];
 
-function showProject(projectId) {
+function showProject(projectId, name) {
   let allProjects = document.getElementsByClassName("affichageprojets")[0].getElementsByClassName("project");
+  let title  = document.getElementsByClassName(name)[0];
+  title.style.color = "rgb(100, 216, 245)";
+  title.style.borderColor = "rgb(100, 216, 245)";
+
+  previousTitle.style.color = "white";
+  previousTitle.style.borderColor = "white";
+  previousTitle = title;
 
   Array.from(allProjects).forEach(project => {
     project.style.display = "none";
@@ -583,9 +591,9 @@ function showProject(projectId) {
   let projectElement = document.getElementsByClassName(projectId)[0];
 
   if (projectElement) {
-    console.log(projectElement);
     if (projectElement.style.display === "" || projectElement.style.display === "none") {
       projectElement.style.display = "flex";
+      console.log(projectElement);
     } else {
       projectElement.style.display = "none";
     }

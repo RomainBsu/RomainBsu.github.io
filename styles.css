@@ -1146,7 +1146,6 @@ header {
 }
 
 .projets {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     height: 85vh;
@@ -1157,64 +1156,115 @@ header {
 .menuprojets {
     top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     background-color: rgb(1, 0, 70);
     color: rgb(255, 255, 255);
     padding: 15px 8px 15px 8px;
-    height: 80%;
-    width: 14%;
     border: solid 2px rgb(0, 0, 0);
 }
 
 .menuprojets h2 {
     border-bottom: solid 1px rgb(255, 255, 255);
-    margin: 0 0 10px 0;
+    margin: 0 1% 10px 1%;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
+    text-align: center;
 }
 
-.menuprojets h2:hover {
-    color: rgb(151, 239, 255);
+.menuprojetse .saithtitle{
+    color: rgb(100, 216, 245);
+    border-color: rgb(100, 216, 245);
 }
 
-.affichageprojets {
+
+.affichageprojets{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    height: 80%;
-    padding: 15px 8px 15px 8px;
+}
+
+.affichageprojets img{
+    width: 60%;
+}
+
+.saithseren.project{
+    display: flex;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(1, 0, 70);
-    border: solid 2px rgb(0, 0, 0);
-    overflow: hidden;
+}
+
+.saithseren.project li{
+    width: 100%;
+    margin: 1% 0 1% 0;
+    padding: 0 10% 0 10%;
+    list-style: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px rgb(212, 235, 255);
+    border-top: solid 1px rgb(212, 235, 255);
+}
+.saithseren.project img{
+    width: 68%;
+    margin: 0 2% 0 2%;
+}
+.saithseren.project p{
+    font-size: 22px;
+    padding: 0 2% 0 2%;
+    text-align: justify;
 }
 
 .project-container {
     display: flex;
     overflow: hidden;
 }
-
-.project-container img {
+.interphone.project, .webscrapper.project, .quasar.project, .rootme.project, .dimensio.project{
+    display: none;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(1, 0, 70);
+}
+.interphone.project li, .webscrapper.project li, .quasar.project li, .rootme.project li, .dimensio.project li{
     width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
+    margin: 1% 0 1% 0;
+    padding: 0 10% 0 10%;
+    list-style: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px rgb(212, 235, 255);
+    border-top: solid 1px rgb(212, 235, 255);
+}
+.interphone.project img, .webscrapper.project img, .quasar.project img, .rootme.project img, .dimensio.project img{
+    width: 68%;
+    margin: 0 2% 0 2%;
+}
+.interphone.project p, .webscrapper.project p, .quasar.project p, .rootme.project p, .dimensio.project p{
+    font-size: 22px;
+    padding: 0 2% 0 2%;
+    text-align: justify;
 }
 
-.interphoneproject{
-    display: none;
+.rootme.project a{
+    width: 50%;
+    margin-right: 20%;
 }
 
-.saithserenproject{
-    display: none;
+.rootme.project a img{
+    border: 6px solid black;
 }
 
-.quasarproject{
-    display: none;
+.rootme.project a img:hover{
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
-.rootmeproject{
-    display: none;
-}
 @media only screen and (max-width: 1500px) {
     .nom{
         font-size: 40px;
@@ -1265,6 +1315,8 @@ header {
     }
 }
 
+
+
 @media only screen and (max-width: 800px) {
     .nom{
         font-size: 50px;
@@ -1311,5 +1363,11 @@ header {
     }
     .timelinetitle, .competencestitle, .experiencestitle, .projetstitle{
         font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .affichageprojets li{
+        flex-direction: column;
     }
 }

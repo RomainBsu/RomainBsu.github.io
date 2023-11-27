@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Romain Busseau</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
         <script src="https://kit.fontawesome.com/f7054a276f.js" crossorigin="anonymous"></script>
@@ -250,22 +250,79 @@
         <h2 class="projetstitle" id="page5">Mes projets</h2>
         <div class="projets">
             <div class="menuprojets">
-                <h2 onclick="showProject('interphone project')">Interphone</h2>
-                <h2 onclick="showProject('saithseren project')">Site Saith Seren</h2>
-                <h2 onclick="showProject('webscrapper project')">Web Scrapper</h2>
-                <h2 onclick="showProject('quasar project')">Quasar</h2>
-                <h2 onclick="showProject('rootme project')">Root Me</h2>
+                <h2 class="saithtitle" onclick="showProject('saithseren project', 'saithtitle')">Saith Seren</h2>
+                <h2 class="interphonetitle" onclick="showProject('interphone project' ,'interphonetitle')">Interphone</h2>
+                <h2 class="scrapertitle" onclick="showProject('webscrapper project', 'scrapertitle')">Web Scrapper</h2>
+                <h2 class="rootmetitle" onclick="showProject('rootme project', 'rootmetitle')">Root Me</h2>
             </div>
             <div class="affichageprojets">
-                <div class="interphone project">
-                </div>
                 <div class="saithseren project">
+                    <li>
+                        <img src="Saith_Seren_Main.png">
+                        <p>
+                            Ceci est la page principale du site web créé lors d'un projet au Pays de Galles. Nous étions en équipe de 3 pour réaliser l'entièreté du projet en 2 semaines. Nous avons choisi de respecter la charte graphique du site web en appliquant les couleurs primaires et secondaires du drapeau gallois. Nous avons également réimaginé chacun des onglets dans un style plus moderne. De plus, nous avons mis en place la possibilité de changer la langue en gallois afin de respecter le cahier des charges demandé.</p>
+                    </li>
+                    <li>
+                        <p>
+                            La plupart du travail sur cette page se trouve dans le code. En effet, nous avons créé une page de connexion en PHP qui communique avec la base de données pour vérifier l'utilisateur. Nous avons également mis en place une protection contre les injections SQL. Nous aurions également aimé ajouter un filtre qui empêche toute utilisation d'attaques XSS, par exemple en utilisant des CSP ou des filtres côté serveur. Cependant, le temps imparti pour la réalisation du projet ne nous a pas permis de mettre l'accent sur la sécurité, et étant donné une contrainte temporelle, nous avons fait le choix de ne pas l'implémenter.</p>
+                        <img src="Saith_Seren_Login.png">
+                    </li>
+                    <li>    
+                        <img src="Saith_Seren_Admin_Calendar.png">
+                        <p>La seconde grande partie de ce projet réside dans le panneau d'administration que j'ai entièrement développé manuellement. Celui-ci permet de contrôler très simplement, après une authentification, les utilisateurs, le calendrier, les messages, et offre la possibilité d'envoyer un e-mail à tous les contributeurs. Il accède directement à la base de données, ce qui permet d'actualiser le site en temps réel avec des actions très accessibles et compréhensibles.</p>
+                    </li>
+                    <li>
+                        <p>Pour les besoins de la page d'administration, nous avons décidé de créer une base de données SQL avec les tables suivantes :</p>
+                        <img src="Saith_Seren_SQL.png">
+                    </li>
+                    <li>
+                        <img src="Saith_Seren_Calendar.png">
+                        <p>La page de calendrier disponible sur le site web se met à jour dynamiquement depuis la base de données. Elle traite les informations et n'affiche que celles à venir dans l'ordre chronologique. Tous ces événements sont éditables depuis la page d'administration vue précédemment.</p>
+                    </li> 
+                </div>
+                <div class="interphone project">
+                    <li>
+                        <img src="Interphone_Home.png">
+                        <p>Nous avons créé un projet en groupe de deux personnes dans lequel nous avons réalisé un interphone connecté. La page principale présentée ici est le menu principal de notre application.</p>
+                    </li>
+                    <li>
+                        <p>Cette première partie de code récupère la météo depuis l'API "meteo-concept". Nous traitons ensuite le fichier JSON afin de récupérer les informations nécessaires pour afficher la météo.</p>
+                        <img src="Interphone_Code_Meteo.png">
+                    </li>
+                    <li>
+                        <img src="Interphone_Caméra.png">
+                        <p>
+                            La page en direct permet à deux utilisateurs connectés sur une même session de récupérer le flux vidéo et audio d'une caméra branchée sur l'un des appareils.</p>
+                    </li>
+                    <li>
+                        <p>
+                            Nous utilisons Socket.IO pour les flux de caméra et de micro. Nous avons également dû faire face à quelques difficultés pour connecter les appareils entre eux, car les navigateurs bloquaient certaines fonctionnalités sur des connexions non sécurisées en HTTP. Notamment, "mediadevice" et "getusermedia" se bloquaient quel que soit le navigateur tant que nous n'avions pas de certificats valides.</p>
+                        <img src="Interphone_Code_Camera.png">
+                    </li>
                 </div>
                 <div class="webscrapper project">
-                </div>
-                <div class="quasar project">
+                    <li>
+                        <p>Le projet de web scraper a été créé sur Visual Studio en C#. Il utilise le framework .Net Windows Form. Nous devions réaliser un web scraper sur le site de notre choix et stocker les informations choisies dans une base de données en local.<br><br>L'application recherche toutes les informations sur le site web, les classe et les trie afin de faciliter la navigation pour l'utilisateur. Une fois cela fait, l'utilisateur peut choisir quelles informations stocker dans sa base de données.</p>
+                        <img src="Scrapper_Scrap.png">
+                    </li>
+                    <li>
+                        <img src="Scrapper_Code.png">
+                        <p>
+                            L'action de scrap est réalisée à l'aide du package "HtmlAgilityPack".<br> Le projet a également impliqué l'utilisation de la programmation orientée objet pour le stockage des informations (artistes, albums, etc.), ainsi que pour la connexion à la base de données. J'ai décidé d'utiliser l'outil intégré à Visual Studio utilisant les bases de données SQL pour stocker les informations.</p>
+                    </li>
+                    <li>
+                        <p>Un onglet supplémentaire dans l'application permet également de naviguer sur le site web par lequel l'application passe pour récupérer les données. La navigation a été restreinte au site lui-même uniquement.</p>
+                        <img src="Scrapper_Web.png">
+                    </li>
                 </div>
                 <div class="rootme project">
+                    <li>
+                        <p>Voici mon profil root-me, il évolue souvent au fils du temps. Pour avoir la mise à jour en temps exacte n'hesitez pas à aller consulter mon profil direcement sur root-me en cliquant ici &nbsp<i style='font-size:20px' class='fas'>&#xf061;</i></p>
+                        <a href="https://www.root-me.org/brexard?lang=fr"><img src="rootme.png"></a>
+                    </li>
+                    <li>
+                        <img src="root-me_progress.png">
+                    </li>
                 </div>
             </div>
         </div>
