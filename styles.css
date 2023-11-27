@@ -1171,7 +1171,7 @@ header {
     text-align: center;
 }
 
-.menuprojetse .saithtitle{
+.menuprojets .saithtitle{
     color: rgb(100, 216, 245);
     border-color: rgb(100, 216, 245);
 }
@@ -1207,6 +1207,7 @@ header {
     border-bottom: solid 1px rgb(212, 235, 255);
     border-top: solid 1px rgb(212, 235, 255);
 }
+
 .saithseren.project img{
     width: 68%;
     margin: 0 2% 0 2%;

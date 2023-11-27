@@ -593,7 +593,6 @@ function showProject(projectId, name) {
   if (projectElement) {
     if (projectElement.style.display === "" || projectElement.style.display === "none") {
       projectElement.style.display = "flex";
-      console.log(projectElement);
     } else {
       projectElement.style.display = "none";
     }
