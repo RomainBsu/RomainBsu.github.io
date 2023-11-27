@@ -1233,7 +1233,6 @@ header {
 .interphone.project li, .webscrapper.project li, .quasar.project li, .rootme.project li, .dimensio.project li{
     width: 100%;
     margin: 1% 0 1% 0;
-    padding: 0 10% 0 10%;
     list-style: none;
     display: flex;
     color: white;
