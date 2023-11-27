@@ -1198,7 +1198,6 @@ header {
 .saithseren.project li{
     width: 100%;
     margin: 1% 0 1% 0;
-    padding: 0 10% 0 10%;
     list-style: none;
     display: flex;
     color: white;
@@ -1369,5 +1368,8 @@ header {
 @media only screen and (max-width: 1350px) {
     .affichageprojets li{
         flex-direction: column;
+    }
+    .saithseren.project p,.interphone.project p, .webscrapper.project p, .quasar.project p, .rootme.project p, .dimensio.project p{
+        padding: 2% 0 2% 0;
     }
 }
