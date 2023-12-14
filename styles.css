@@ -261,10 +261,6 @@ header {
         height: auto;
     }
 
-    .imageidentite{
-        width: 150%;
-    }
-
     .imageidentite .presentationbouton{
         width: 100%;
     }
@@ -314,6 +310,7 @@ header {
 @media only screen and (max-width: 1425px) {
     .textidentite{
         color: #000000;
+        width: 40%;
     }
     .textidentite:hover{
         transform: scale(1);
@@ -1277,11 +1274,11 @@ header {
         width: 26%;
     }
     .textidentite{
-        font-size: 100%;
-        width: 100%;
+        font-size: 120%;
+        width: 450px;
     }
     .timeline .item1{
-        width: 80%;
+        width: 500px;
         font-size: 26px;
     }
     .timeline .item1 .timelinetext h3{
